@@ -59,11 +59,6 @@ module.exports = function (grunt) {
 			options: {
 				outputStyle: 'nested'
 			},
-			sitefinityBootstrap: {
-				files: {
-					'<%= dist.path %>/css/sitefinity.bootstrap.css': '<%= src.path %>/sass/sitefinity.bootstrap.scss'
-				}
-			},
 			sitefinity: {
 				files: {
 					'<%= dist.path %>/css/sitefinity.css': '<%= src.path %>/sass/sitefinity.scss'
@@ -171,7 +166,7 @@ module.exports = function (grunt) {
 			},
 			styles: {
 				files: ['<%= src.path %>/**/*.{scss,sass}'],
-				tasks: ['sass:sitefinityBootstrap', 'cssmin']
+				tasks: ['sass:sitefinity', 'cssmin']
 			},
 			images: {
 				files: ['<%= src.path %>/**/*.{png,jpg,gif,jpeg}'],
@@ -202,7 +197,7 @@ module.exports = function (grunt) {
 	// Runs once
 	grunt.registerTask('build', [
 		'newer:sprite',
-		'sass:sitefinityBootstrap',
+		'sass:sitefinity',
 		'cssmin',
 		'uglify:dist',
 		'newer:imagemin'

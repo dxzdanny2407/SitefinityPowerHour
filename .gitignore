@@ -1,3 +1,7 @@
 ResourcePackages/Bootstrap/node_modules/
 obj/
 ResourcePackages/Bootstrap/assets/dist/
+bin/SitefinityWebApp.dll
+bin/SitefinityWebApp.pdb
+bin/SitefinityWebApp.ResourcePackages.Bootstrap.pdb
+bin/SitefinityWebApp.ResourcePackages.Bootstrap.dll

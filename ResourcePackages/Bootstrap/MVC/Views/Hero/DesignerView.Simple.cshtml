@@ -1,0 +1,21 @@
+﻿@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+
+
+<div class="form-group">
+    <div>
+        <label for="title-field" class="m-top-sm">Title</label>
+        <input id="title-field" class="form-control" ng-model="properties.Title.PropertyValue" type="text" />
+    </div>
+    <div>
+        <label class="m-top-sm">Body</label>
+        <sf-html-field sf-model="properties.Body.PropertyValue"></sf-html-field>
+    </div>
+    <div>
+        <label class="m-top-sm">Image</label>
+        <sf-image-field class="sf-Media--info modal-settings modal-settings-space"
+                        sf-model="properties.Image.PropertyValue"
+                        sf-image="selectedImage"
+                        sf-provider="properties.ImageProviderName.PropertyValue"
+                        id="image-field"></sf-image-field>
+    </div>
+</div>

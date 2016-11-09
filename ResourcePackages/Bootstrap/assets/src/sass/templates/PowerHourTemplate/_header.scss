@@ -1,0 +1,17 @@
+
+.header{
+    margin-bottom: -20px;
+
+    .navbar{
+        div{
+            max-width: $max-page-width;
+            margin: 0 auto;
+        }
+    }
+    
+    .logo{
+        width: 200px;
+        top: -30px;
+        position: relative;
+    }
+}

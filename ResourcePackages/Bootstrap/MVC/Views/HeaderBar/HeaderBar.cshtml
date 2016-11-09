@@ -1,0 +1,38 @@
+﻿@using SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Helpers;
+@using Telerik.Sitefinity.Frontend.Navigation.Mvc.Models;
+@{
+    NavigationHelper helper = new NavigationHelper();
+    List<NodeViewModel> pages = helper.GetPages();
+ }
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <img class="logo" alt="Logo" src="~/ResourcePackages/Bootstrap/assets/dist/images/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                @RenderNavigationPages(pages)
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@helper RenderNavigationPages (List<NodeViewModel> pages) {
+    foreach (var page in pages)
+    {
+        <li class="@IsActive(page)">
+            <a href="@page.Url">@page.Title</a>
+        </li>
+    }
+}
+
+@helper IsActive(NodeViewModel node)
+{
+    if (node.IsCurrentlyOpened)
+    {
+        @Html.Raw("active");
+    }
+}

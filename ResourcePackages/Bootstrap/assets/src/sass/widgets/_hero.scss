@@ -1,0 +1,20 @@
+.widget-hero{
+    min-height: 450px;
+    .hero-container{
+        padding: 150px 20px;
+
+        .title{
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .body{
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    
+}

@@ -1,0 +1,13 @@
+﻿
+@model SitefinityWebApp.ResourcePackages.Bootstrap.MVC.ViewModels.HeroViewModel
+
+<div class="widget-hero" style="@if (Model.ImageUrl != string.Empty) { <text> background-image: url(@Model.ImageUrl); background-size: cover; </text> } ">
+    <div class="hero-container">
+        <div class="title">
+            <h1>@Model.Title</h1>
+        </div>
+        <div class="body">
+            @Html.Raw(Model.Body)
+        </div>
+    </div>
+</div>

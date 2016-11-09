@@ -1,0 +1,28 @@
+﻿@using System.Web.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.UI.MVC;
+@using Telerik.Sitefinity.Services;
+
+<!DOCTYPE html>
+<html @Html.RenderLangAttribute()>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Sitefinity</title>
+
+    @Html.Section("head")
+    @Html.StyleSheet(Url.Content("~/ResourcePackages/Bootstrap/assets/dist/css/sitefinity.min.css"), "head")
+</head>
+
+<body>
+    <div class="header">
+        @Html.SfPlaceHolder("HeaderPlaceHolder")
+    </div>
+    
+    <div class="sfPublicWrapper" id="PublicWrapper">		
+        @Html.SfPlaceHolder("ContentPlaceHolder")		
+    </div>
+
+</body>
+</html>
