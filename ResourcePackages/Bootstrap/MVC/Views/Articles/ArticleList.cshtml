@@ -1,0 +1,21 @@
+﻿
+@model SitefinityWebApp.ResourcePackages.Bootstrap.MVC.ViewModels.ArticlesViewModel
+
+<div class="widget-article-list">
+    <div class="articles-container">
+        @foreach (var article in Model.Articles)
+        {
+            <div class="article">
+                <div class="article-image-container">
+                    <img class="article-image" src="@article.Image.Url" />
+                </div>
+                <div class="article-date-container">
+                    <h3 class="article-date">@article.Date.ToString("MMMM d, yyyy")</h3>
+                </div>
+                <div class="article-title-container">
+                    <h2 class="article-title">@article.Title</h2>
+                </div>
+            </div>
+        }
+    </div>
+</div>

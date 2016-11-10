@@ -54,7 +54,7 @@ namespace SitefinityWebApp.ResourcePackages.Bootstrap.MVC.Helpers
                     Title = item.GetValue("Title") != null ? item.GetValue("Title").ToString() : string.Empty,
                     Body = item.GetValue("Body") != null ? item.GetValue("Body").ToString() : string.Empty,
                     Date = (DateTime)item.GetValue("Date"),
-                    Image = item.GetRelatedItems<Telerik.Sitefinity.Libraries.Model.Image>("Picture").SingleOrDefault() ?? new Telerik.Sitefinity.Libraries.Model.Image()
+                    Image = item.GetRelatedItems<Telerik.Sitefinity.Libraries.Model.Image>("Image").SingleOrDefault() ?? new Telerik.Sitefinity.Libraries.Model.Image(),
                 }));
             }
             catch (Exception ex)
