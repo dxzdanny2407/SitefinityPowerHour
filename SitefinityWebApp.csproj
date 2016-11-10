@@ -943,8 +943,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourcePackages\Bootstrap\MVC\Controllers\HeaderBarController.cs" />
     <Compile Include="ResourcePackages\Bootstrap\MVC\Controllers\HeroController.cs" />
+    <Compile Include="ResourcePackages\Bootstrap\MVC\Helpers\DynamicContentHelper.cs" />
     <Compile Include="ResourcePackages\Bootstrap\MVC\Helpers\ImageHelper.cs" />
     <Compile Include="ResourcePackages\Bootstrap\MVC\Helpers\NavigationHelper.cs" />
+    <Compile Include="ResourcePackages\Bootstrap\MVC\Models\Article.cs" />
+    <Compile Include="ResourcePackages\Bootstrap\MVC\Models\Constants.cs" />
     <Compile Include="ResourcePackages\Bootstrap\MVC\ViewModels\HeroViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1091,7 +1094,6 @@
     <Folder Include="App_Data\Sitefinity\" />
     <Folder Include="ResourcePackages\Bootstrap\assets\src\icons\" />
     <Folder Include="ResourcePackages\Bootstrap\assets\src\js\" />
-    <Folder Include="ResourcePackages\Bootstrap\MVC\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Data\GeoLocation\GeoLiteCity.dat" />
